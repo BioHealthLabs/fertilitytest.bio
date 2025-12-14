@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FertilityTest.bio – Fertility Testing Explained (Home Kits &amp; Clinics, 2025)</title>
+  <meta name="description"
+        content="FertilityTest.bio is an independent, evidence-based guide to fertility testing. Learn which home tests can help (ovulation, hormones, sperm tests), what results mean, when to use a clinic, and how to choose reputable providers." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://fertilitytest.bio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FertilityTest.bio – Fertility Testing Explained (2025)" />
+  <meta property="og:description"
+        content="Neutral, evidence-based fertility testing overview: home kits, hormone tests, sperm tests, timing, accuracy, and when to see a clinician." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://fertilitytest.bio/" />
+  <meta property="og:image" content="https://genectics.com/og-image-fertility-testing.jpg" />
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "FertilityTest.bio",
+    "url": "https://fertilitytest.bio/",
+    "description": "Independent, evidence-based information about fertility testing (home kits and clinical testing).",
+    "publisher": {
+      "@type": "Organization",
+      "name": "ronarn",
+      "url": "https://ronarn.com"
+    }
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What fertility tests can I do at home?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common at-home fertility-related tests include ovulation (LH) tests, basal body temperature tracking, some hormone finger-prick tests (provider-dependent), and home sperm tests for basic sperm indicators. Home testing can support screening and timing, but it does not replace a full fertility evaluation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are ovulation tests accurate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ovulation (LH) tests can be useful for identifying an LH surge that often occurs 24–36 hours before ovulation. Accuracy depends on correct timing and interpretation. Some people benefit from testing more frequently or combining with symptom tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I see a fertility clinic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you have irregular cycles, symptoms suggesting a medical issue, or you have been trying to conceive for a long time without success, clinical evaluation can be appropriate. A clinician can order validated lab tests and imaging and interpret results in context."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do fertility tests include genetic screening?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some pathways include genetic carrier screening or other genetic tests, but fertility testing is often focused on timing, hormones, and reproductive health indicators. Genetic testing has its own privacy and counseling considerations."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- ===== Consent (HARD) ===== -->
+  <style>
+    body.consent-locked {
+      overflow: hidden !important;
+      touch-action: none !important;
+    }
+    .consent-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .consent-overlay[aria-hidden="false"] { display: flex; }
+
+    .consent-modal {
+      width: 100%;
+      max-width: 720px;
+      background: #0b1220;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+      overflow: hidden;
+    }
+    .consent-header { padding: 18px 18px 0 18px; }
+    .consent-title { margin: 0; font-size: 1.1rem; letter-spacing: 0.01em; }
+    .consent-body {
+      padding: 14px 18px 18px 18px;
+      line-height: 1.55;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+    .consent-body p { margin: 10px 0; }
+    .consent-list { margin: 12px 0 0 0; padding-left: 18px; }
+    .consent-list li { margin: 6px 0; }
+
+    .consent-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 16px 18px 18px 18px;
+      background: rgba(2, 6, 23, 0.5);
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+    }
+    .consent-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.92rem;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .consent-accept { background: #ec4899; color: #0b1220; }
+    .consent-reject {
+      background: transparent;
+      color: #e5e7eb;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+    }
+    .consent-links {
+      margin-left: auto;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    .consent-links a { color: #93c5fd; text-decoration: none; }
+    .consent-links a:hover { text-decoration: underline; }
+  </style>
+
+  <!-- Consent + GA loader (GA4 loads only AFTER accept) -->
+  <script>
+    (function () {
+      const CONSENT_KEY = "ronarn_consent_analytics_v1";
+      const GA_ID = "G-3GVJ73QQ5J"; // same as Genectics.com
+
+      function lockPage() {
+        document.body.classList.add("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "false");
+      }
+
+      function unlockPage() {
+        document.body.classList.remove("consent-locked");
+        const overlay = document.getElementById("consent-overlay");
+        if (overlay) overlay.setAttribute("aria-hidden", "true");
+      }
+
+      function loadGA4() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+        document.head.appendChild(s);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        window.gtag = gtag;
+
+        gtag("js", new Date());
+        gtag("config", GA_ID, { anonymize_ip: true });
+      }
+
+      function setConsent(value) { localStorage.setItem(CONSENT_KEY, value); }
+      function getConsent() { return localStorage.getItem(CONSENT_KEY); }
+      function clearConsent() { localStorage.removeItem(CONSENT_KEY); }
+
+      window.__openPrivacySettings = function () {
+        clearConsent();
+        window.location.reload();
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const saved = getConsent();
+
+        if (saved === "accepted") { loadGA4(); unlockPage(); return; }
+        if (saved === "rejected") { unlockPage(); return; }
+
+        lockPage();
+
+        const btnAccept = document.getElementById("consent-accept");
+        const btnReject = document.getElementById("consent-reject");
+
+        btnAccept.addEventListener("click", function () {
+          setConsent("accepted");
+          loadGA4();
+          unlockPage();
+        });
+
+        btnReject.addEventListener("click", function () {
+          setConsent("rejected");
+          unlockPage();
+        });
+      });
+    })();
+  </script>
+</head>
+
+<body class="consent-locked">
+  <!-- HARD Consent Overlay -->
+  <div id="consent-overlay" class="consent-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Privacy choices">
+    <div class="consent-modal">
+      <div class="consent-header">
+        <h2 class="consent-title">Privacy choices</h2>
+      </div>
+      <div class="consent-body">
+        <p>
+          FertilityTest.bio uses <strong>analytics</strong> to understand which fertility testing topics people read
+          (ovulation, hormones, sperm testing) and to improve the content over time.
+        </p>
+        <ul class="consent-list">
+          <li><strong>If you accept:</strong> we load Google Analytics (GA4) to measure visits and basic usage trends.</li>
+          <li><strong>If you reject:</strong> the site still works normally, but we do not load analytics.</li>
+        </ul>
+        <p>
+          Acceptance is only about <strong>analytics</strong>. This site is informational and does not provide medical advice.
+        </p>
+      </div>
+      <div class="consent-actions">
+        <button id="consent-accept" class="consent-btn consent-accept" type="button">Accept analytics</button>
+        <button id="consent-reject" class="consent-btn consent-reject" type="button">Reject</button>
+
+        <div class="consent-links">
+          <span>Learn more:</span>
+          <a href="/privacy.html">Privacy</a>
+          <span>·</span>
+          <a href="/about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="brand-name">FertilityTest.bio</div>
+        <div class="brand-tagline">
+          Evidence-based fertility testing: home kits, hormones, sperm tests, timing, accuracy, and when to see a clinic.
+        </div>
+      </div>
+      <div class="trust-tags">
+        <span class="trust-tag">No sponsorships</span>
+        <span class="trust-tag">Educational only</span>
+        <span class="trust-tag">Privacy-aware</span>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div>
+          <h1 id="hero-heading" class="hero-title">
+            Fertility testing: start with clarity, not anxiety.
+          </h1>
+
+          <p class="hero-subtitle">
+            Fertility testing can mean different things: timing ovulation, checking hormones, assessing sperm indicators,
+            or investigating underlying medical factors. This site explains the basics and how to choose reputable testing pathways.
+          </p>
+
+          <ul class="hero-list">
+            <li>Ovulation timing (LH tests) and cycle signals.</li>
+            <li>Hormones that may be relevant (context matters).</li>
+            <li>Home sperm tests: what they can and cannot measure.</li>
+            <li>When it makes sense to use a clinic or lab-based testing.</li>
+          </ul>
+
+          <div class="hero-highlight">
+            Important: a normal home test does not “prove” fertility, and an abnormal result often needs confirmation.
+          </div>
+
+          <div class="hero-actions">
+            <a href="#home-tests" class="btn-primary">
+              Start with home fertility tests
+              <span class="chevron">›</span>
+            </a>
+            <a href="#when-to-see-a-clinic" class="btn-secondary">
+              When to see a clinic
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="rating-pill">
+            <span class="star">★</span>
+            Most useful: <strong>timing + confirmation</strong>
+          </div>
+          <p class="hero-note">
+            Many people start with ovulation timing and basic screening, then escalate to clinical evaluation if needed.
+          </p>
+        </aside>
+      </section>
+
+      <!-- HOME TESTS -->
+      <section id="home-tests" class="card">
+        <h2 class="section-title">Home fertility tests: what they can do</h2>
+        <p class="section-subtitle">
+          Home tests can support planning and basic screening. They are most effective when you use them correctly and interpret them conservatively.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Ovulation (LH) tests</h3>
+            <p>
+              Often used to detect an LH surge that can precede ovulation. Best used with consistent testing timing and cycle tracking.
+            </p>
+            <ul class="hero-list">
+              <li>Helps identify a fertile window.</li>
+              <li>Does not confirm ovulation happened.</li>
+              <li>Irregular cycles can complicate timing.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Hormone panels</h3>
+            <p>
+              Some providers offer finger-prick testing for hormones. Results depend heavily on cycle day, time of day, and clinical context.
+            </p>
+            <ul class="hero-list">
+              <li>Useful for trends and screening.</li>
+              <li>Requires correct timing to be meaningful.</li>
+              <li>Reference ranges vary by lab/provider.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Home sperm tests</h3>
+            <p>
+              Some home sperm tests measure limited indicators (provider-dependent). They do not replace a full semen analysis.
+            </p>
+            <ul class="hero-list">
+              <li>May provide an initial signal.</li>
+              <li>Does not assess everything clinics assess.</li>
+              <li>Abnormal results should be confirmed.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- HOW TO CHOOSE -->
+      <section id="choose" class="card">
+        <h2 class="section-title">How to choose a reputable fertility testing pathway</h2>
+        <p class="section-subtitle">
+          Focus on method quality, transparency, and what happens after a result.
+        </p>
+
+        <ol class="numbered">
+          <li><strong>Check the testing method:</strong> lab-based vs self-read strips; confirm what is measured.</li>
+          <li><strong>Look for clear instructions:</strong> timing and sample handling are common failure points.</li>
+          <li><strong>Interpretation support:</strong> good providers explain limitations and next steps.</li>
+          <li><strong>Privacy controls:</strong> data retention, deletion options, and account controls should be explicit.</li>
+          <li><strong>Escalation plan:</strong> if the result is abnormal or symptoms exist, use a clinician.</li>
+        </ol>
+      </section>
+
+      <!-- WHEN TO SEE A CLINIC -->
+      <section id="when-to-see-a-clinic" class="card">
+        <h2 class="section-title">When it makes sense to see a clinic</h2>
+        <p class="section-subtitle">
+          Home testing is not ideal for every situation. A clinician can order validated tests and interpret them in full context.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Consider professional evaluation if</h3>
+            <ul class="hero-list">
+              <li>Cycles are very irregular or symptoms suggest an underlying condition.</li>
+              <li>You’ve been trying for a long time without success.</li>
+              <li>There is a known medical history impacting fertility.</li>
+              <li>Home test results are abnormal or confusing.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>What clinics can add</h3>
+            <ul class="hero-list">
+              <li>Validated lab tests with appropriate timing.</li>
+              <li>Imaging and broader medical assessment.</li>
+              <li>Clearer interpretation and treatment planning.</li>
+              <li>Partner evaluation (when relevant).</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PRIVACY -->
+      <section id="privacy" class="card">
+        <h2 class="section-title">Privacy and sensitive data</h2>
+        <p class="section-subtitle">
+          Fertility-related data can be sensitive. Before using any service, read the privacy policy and understand retention and deletion options.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Checklist</h3>
+            <ul class="hero-list">
+              <li>Can you delete your account and results?</li>
+              <li>Is data shared with third parties (and for what purpose)?</li>
+              <li>How long is data retained by default?</li>
+              <li>Is consent granular (analytics vs other uses)?</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Related comparison hub</h3>
+            <p>
+              For broader test kit comparisons and related categories, Genectics.com is used as the comparison hub across this network.
+            </p>
+            <a href="https://genectics.com/?ref=fertilitytest.bio-hub" class="btn-primary" target="_blank" rel="noopener">
+              Go to Genectics.com <span class="chevron">›</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <section class="disclaimer">
+        <p>
+          FertilityTest.bio does not provide medical advice. This website is for informational and educational purposes only.
+          If you have symptoms, significant concerns, or results that affect major decisions, consult qualified health professionals.
+        </p>
+        <p>
+          Analytics consent (if accepted) is used only to understand which content is useful and to improve the site.
+        </p>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <span>© <span id="year"></span> FertilityTest.bio – Independent fertility testing education.</span>
+      <span>Operated by ronarn AS, Norway. Educational information site.</span>
+      <span>Contact: <a href="mailto:info@fertilitytest.bio">info@fertilitytest.bio</a></span>
+      <span>Business address: Pb. 1010 Lillestrøm Syd, 2012 Lillestrøm, Norway</span>
+
+      <span class="footer-links">
+        <a href="/about.html">About FertilityTest.bio</a> ·
+        <a href="/privacy.html">On-site Privacy</a> ·
+        <a href="https://organization.bio" target="_blank" rel="noopener">About the Publisher</a> ·
+        <a href="https://contactus.bio" target="_blank" rel="noopener">Network Contact</a> ·
+        <a href="https://disclaimer.bio" target="_blank" rel="noopener">Disclaimer</a> ·
+        <a href="https://terms.bio" target="_blank" rel="noopener">Terms</a>
+        <span> · </span>
+        <a href="#" onclick="window.__openPrivacySettings(); return false;">Privacy settings</a>
+      </span>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
